@@ -5,10 +5,33 @@
 > **Status:** work in progress. The core synthesis engine — crystal geometry, multi-population exposure partitioning, adjacency, scattering, shadow roll-off, substrate mottle — is functional. This repository covers grain synthesis only: no color, tone, halation, or diffusion modeling.
 
 <p align="center">
-  <img src="assets/hero_comparison.jpg" alt="Clean digital image vs. synthesized grain, 100% crop" width="800">
+  <img src="assets/wedge_FILLING_1.0_SIZE_[3, 5, 7]_LAYERS_40_STD_0.25.jpg">
   <br>
-  <em>[Placeholder — replace with a 100% crop comparison, ideally a midtone region where crystal structure is visible]</em>
+  <em>[Wedge Test — 6144x3000px - (Filling=1.0, Size=[3, 5, 7], n=40, std=0.25)]</em>
 </p>
+
+## Wedge Test Performance Notes
+
+The test wedge is a 6144x3000px image, 16bit .tiff & ROMM. Performed on a 2015 Intel MacBook Pro.
+
+==================================================
+GRAIN PROFILING REPORT
+==================================================
+Step 1 (Target Seeding Map):       0.0760 s
+Step 2 (Layer Splits):             0.0000 s
+Step 3 (Crystal Precomputation):   0.0455 s
+Step 4 (Conversions & Roll-off):   5.6257 s
+  └─ Loop-Invariant Filters:       4.7488 s
+Step 5 (Layer Loop Total):        52.4003 s
+  ├─ Seq FFT & Target Prep:        8.7691 s
+  ├─ Seq Poisson Seeds:           31.2624 s
+  ├─ Shadow Mask Application:      0.5188 s
+  └─ 2D FFT Convolution (fft):    11.1605 s
+Step 5.5 (Base Fog Mottle):        5.4105 s
+Step 6 (Calibration & Output):     0.3000 s
+--------------------------------------------------
+Total Grain Time:              63.9148 s
+==================================================
 
 ## Abstract
 
