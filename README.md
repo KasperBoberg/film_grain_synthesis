@@ -5,7 +5,7 @@
 > **Status:** work in progress. The core synthesis engine — crystal geometry, multi-population exposure partitioning, adjacency, scattering, shadow roll-off, substrate mottle — is functional. This repository covers grain synthesis only: no color, tone, halation, or diffusion modeling.
 
 <p align="center">
-  <img src="assets/wedge_FILLING_1.0_SIZE_[3, 5, 7]_LAYERS_40_STD_0.25_small.jpg">
+  <img src="assets/wedge_FILLING_1.0_SIZE_3-5-7_LAYERS_40_STD_0.25_small.jpg">
   <br>
   <em>[Wedge Test — 6144x3000px - (Filling=1.0, Size=[3, 5, 7], n=40, std=0.25)]</em>
 </p>
@@ -270,4 +270,4 @@ The polygon-envelope equation used to define a crystal's outline, and the log-no
 
 ## 8. License
 
-[MIT](LICENSE) — Kasper Boberg.
+[MIT](LICENSE) — Kasper Boberg 2026.
