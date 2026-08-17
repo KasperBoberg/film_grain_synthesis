@@ -245,4 +245,4 @@ The polygon-envelope equation used to define a crystal's outline, and the log-no
 
 ## 8. License
 
-[MIT](LICENSE) — or your preferred license.
+[MIT](LICENSE) — Kasper Boberg.
