@@ -14,6 +14,7 @@
 
 The test wedge is a 6144x3000px image, 16bit .tiff & ROMM. Performed on a 2015 Intel MacBook Pro.
 
+```
 ==================================================
 GRAIN PROFILING REPORT
 ==================================================
@@ -32,6 +33,7 @@ Step 6 (Calibration & Output):     0.3000 s
 --------------------------------------------------
 Total Grain Time:              63.9148 s
 ==================================================
+```
 
 ## Abstract
 
